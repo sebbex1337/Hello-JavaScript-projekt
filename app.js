@@ -1,6 +1,11 @@
 function sayHello() {
   document.querySelector("h3").textContent =
-    "Hello " + document.querySelector("input").value;
+    "Hello " +
+    document.querySelector("#name").value +
+    " " +
+    document.querySelector("#age").value +
+    " år Email: " +
+    document.querySelector("#email").value;
 }
 document.querySelector("button").addEventListener("click", sayHello);
 
