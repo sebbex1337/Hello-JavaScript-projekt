@@ -2,8 +2,8 @@ function sayHello() {
   document.querySelector("h3").textContent =
     "Hello " + document.querySelector("input").value;
 }
-
 document.querySelector("button").addEventListener("click", sayHello);
+
 /* 
 function sayHello2() {
   document.getElementById("output").textContent =
