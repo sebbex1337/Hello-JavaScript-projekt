@@ -1,11 +1,10 @@
 function sayHello() {
-  document.querySelector("h3").textContent =
-    "Hello " +
-    document.querySelector("#name").value +
-    " " +
-    document.querySelector("#age").value +
-    " år Email: " +
-    document.querySelector("#email").value;
+  document.querySelector("#h3name").textContent =
+    "Hello " + document.querySelector("#name").value;
+  document.querySelector("#h3age").textContent =
+    "Alder: " + document.querySelector("#age").value;
+  document.querySelector("#h3email").textContent =
+    "Email: " + document.querySelector("#email").value;
 }
 document.querySelector("button").addEventListener("click", sayHello);
 
